@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mr. fugga's Blog</title>
+    <meta charset="UTF-8" />
+   
+  </head>
+  <body>
+    <header>
+      <style>
+        /* Import a clean, modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* CSS Variables for a Sleek Dark Mode */
+:root {
+  --primary-color: #fca311; /* A vibrant, glowing amber/orange for accents */
+  --nav-bg: #000000;        /* Pure black for the navigation bar */
+  --bg-color: #121212;      /* Deep dark grey background (better than pure black) */
+  --card-bg: #1e1e1e;       /* Slightly lighter grey for the blog posts to stand out */
+  --text-main: #e0e0e0;     /* Soft off-white for comfortable reading */
+  --text-muted: #a0a0a0;    /* Dimmed grey for secondary text and captions */
+  --shadow-color: rgba(0, 0, 0, 0.6); /* Darker shadows for depth */
+}
+
+/* Reset basic elements for consistency */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the main content blocks */
+header, main, footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1, h2, h3 {
+  color: var(--text-main); /* Keep headings bright */
+}
+
+figure {
+  margin: 0;
+  padding: 20px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px; 
+  box-shadow: 0 8px 20px var(--shadow-color);
+  opacity: 0.9; /* Slightly dims the bright image so it doesn't glare in dark mode */
+  transition: opacity 0.3s ease;
+}
+
+img:hover {
+  opacity: 1; /* Brightens the image when the user hovers over it */
+}
+
+figcaption {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--nav-bg);
+  border-radius: 50px; 
+  padding: 15px 30px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  border: 1px solid #333; /* A subtle border keeps the nav crisp against the background */
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Main Content & Articles */
+section {
+  margin-bottom: 50px;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 15px auto;
+}
+
+/* Card layout for blog posts */
+#posts article {
+  background: var(--card-bg);
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px var(--shadow-color);
+  border-left: 6px solid var(--primary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#posts article:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 12px 20px var(--shadow-color); /* The shadow gets deeper on hover */
+}
+
+#posts h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+/* Footer Styling */
+footer {
+  border-top: 1px solid #333; /* Darker border for the footer */
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+address p {
+  margin: 8px 0;
+  font-style: normal;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+      </style>
+      <h1>Welcome to Mr. Fugga's Blog Page!</h1>
+      <figure>
+        <img
+          src="image.png"
+          alt="a cat in the garden"
+        />
+        <figcaption>Fugga hiding</figcaption>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Hi there! I'm  Aayush Batole, a passionate coder who finds endless inspiration in the antics of my beloved cat, Mr. Fugga.
+        </p>
+        <p>
+          His playful nature and boundless energy keeps me on my toes. I love him so much.
+        </p>
+      </section>
+      <section id="posts">
+        <h2>Posts</h2>
+
+        <article>
+          <h3>Mr. Fugga's First Day Home</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
+            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
+            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
+            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
+            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
+          </p>
+        </article>
+        <article>
+          <h3>Mr. Fugga's First Bath</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
+            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
+            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
+            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
+            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
+          </p>
+        </article>
+        <article>
+          <h3>Mr. Fugga's First Birthday Party</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
+            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
+            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
+            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
+            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <address>
+                <p>Phone: <a href="tel:5555555555">6264-xxx-xxx</a></p>
+                <p>Email: <a href="mailto:fake@email.com">fake.@yahoo.com</a></p>
+            </address>
+        </section>
+        <hr>
+    </footer>
+  
+   <p style="color:white; text-align:center ; font-size: 20px;">Made with ❤️ by [AadiTheCoder]</p>
+  </body>
+</html>
